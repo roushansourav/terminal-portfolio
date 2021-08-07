@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import RouterComp from "./components/common/RouterComp";
+import "./App.scss";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        // fontFamily: "'Matrix', sans-serif",
+        // backgroundColor: "#000",
+        // color: "green",
+        // height: "100vh",
+      }}
+    >
+      <RouterComp />
     </div>
   );
-}
+};
 
 export default App;
