@@ -1,4 +1,15 @@
 import '/styles/index.scss';
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import Head from 'next/head'
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="viewport-fit=cover" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
+
+export default MyApp
